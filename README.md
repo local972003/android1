@@ -1,22 +1,70 @@
-package com.example.myapplication;
+ <TextView
+                android:id="@+id/txtstud"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Student Profile"
+                android:layout_marginTop="40dp"
+                android:textColor="@color/black"
+                android:textSize="40dp"
+                android:layout_centerHorizontal="true"/>
 
-import androidx.appcompat.app.AppCompatActivity;
+            <EditText
+                android:id="@+id/Edtsurname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_below="@+id/txtstud"
+                android:hint="Surnamne"
+                android:layout_marginTop="10dp"
+                android:inputType="text"
+                />
+            <EditText
+                android:id="@+id/Edtname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_below="@+id/Edtsurname"
+                android:hint="Name"
+                android:layout_marginTop="10dp"
+                android:inputType="text"
+                />
 
-import android.content.Intent;
-import android.content.SharedPreferences;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.ArrayAdapter;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.ListView;
-import android.widget.TextView;
-import android.widget.Toast;
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:textSize="30dp"
+                android:layout_below="@+id/Edtname"
+                android:layout_marginTop="100dp"
+                android:id="@+id/btnlogin"/>
 
-import java.util.ArrayList;
-import java.util.List;
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Information"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textSize="40dp"
+                android:id="@+id/txtinf"
+                android:visibility="gone"
+                android:layout_below="@+id/btnlogin"
+                android:layout_marginTop="30dp"
+                />
 
-public class MainActivity2 extends AppCompatActivity {
+           <ListView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="20dp"
+               android:id="@+id/listview1"/>
+
+
+------------------------------------------------------------------------------
+
+
+
     Button Login;
     EditText edtsurname,edtname;
     TextView textView;
